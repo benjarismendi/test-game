@@ -5,76 +5,70 @@
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-export function devolverString() {
+export function devolverString(str) {
   // Tu código:
-
-  return;  
+  return str.toString();  
 }
 
-export function suma() {
+export function suma(a, b) {
  // Tu código:
-
-  return;  
+  return a + b;  
 }
 
-export function resta() {
+export function resta(a, b) {
  // Tu código:
-
-  return;
+  return a - b;
 }
 
-export function multiplica() {
+export function divide(a, b) { 
   // Tu código:
-
-  return;
+  return a / b;
 }
 
-export function divide() { 
+export function multiplica(a, b) {
   // Tu código:
-
-  return;
+  return a * b;
 }
 
-export function sonIguales() {  
+export function sonIguales(a, b) {  
   // Tu código:
-
-  return;  
+  return a === b;  
 }
 
-export function tienenMismaLongitud() {  
+export function tienenMismaLongitud(str1, str2) {  
   // Tu código:
 
-  return;
+  return str1.length === str2.length;
 }
 
-export function menosQueNoventa() {  
+export function menosQueNoventa(num) {  
   // Tu código:
 
-  return;
+  return num < 90;
 }
 
-export function mayorQueCincuenta() {  
+export function mayorQueCincuenta(num) {  
   // Tu código:
 
-  return;
+  return num > 50;
 }
 
-export function obtenerResto() {  
+export function obtenerResto(a, b) {  
   // Tu código:
 
-  return;
+  return a % b;
 }
 
-export function esPar() {
+export function esPar(num) {
   // Tu código:
 
-  return;
+  return num % 2 === 0;
 }
 
-export function esImpar() {  
+export function esImpar(num) {  
   // Tu código:
 
-  return;
+  return num % 2 !== 0;
 }
 
 export function elevarAlCuadrado() {  
