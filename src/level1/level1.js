@@ -71,97 +71,110 @@ export function esImpar(num) {
   return num % 2 !== 0;
 }
 
-export function elevarAlCuadrado() {  
+export function elevarAlCuadrado(num) {  
   // Tu código:
 
-  return;
+  return num * num;
 }
 
-export function elevarAlCubo() { 
+export function elevarAlCubo(num) { 
   // Tu código:
 
-  return;
+  return num * num * num;
 }
 
-export function elevar() {  
+export function elevar(num, exponent) {  
   // Tu código:
+  let resultado = num;
+  for (let i = 0; i < exponent - 1; i++) {
+    resultado = resultado * num;
+  }
 
-  return;
+  return resultado;
 }
 
-export function redondearNumero() {  
+export function redondearNumero(num) {  
   // Tu código:
 
-  return;
+  return Math.round(num);
 }
 
-export function redondearHaciaArriba() { 
+export function redondearHaciaArriba(num) { 
   // Tu código:
 
-  return;
+  return Math.ceil(num);
 }
 
 export function numeroRandom() {  
   // Tu código:
 
-  return;
+  return Math.random();
 }
 
-export function esPositivo() {
+export function esPositivo(num) {
   // Tu código:
-  
-  return;
+  if (num === 0) return false
+  let resp = '';
+  if (num > 0) {
+    resp = "Es positivo"
+  } else {
+    resp= "Es negativo"
+  } 
+  return resp;
 }
 
-export function agregarSimboloExclamacion() {  
-  // Tu código:
-
-  return;
-}
-
-export function combinarNombres() {
-  // Tu código:
-
-  return;
-}
-
-export function obtenerSaludo() {
+export function agregarSimboloExclamacion(str) {  
   // Tu código:
 
-  return;
+  return str + '!';
 }
 
-export function obtenerAreaRectangulo() {  
+export function combinarNombres(firstName, lastName) {
   // Tu código:
 
-  return;
+  return firstName + ' ' + lastName;
 }
 
-
-export function retornarPerimetro(){
+export function obtenerSaludo(name) {
   // Tu código:
 
-  return;
+  return `Hola ${name}!`;
 }
 
-
-export function areaDelTriangulo(){
+export function obtenerAreaRectangulo(alto, ancho) {  
   // Tu código:
 
-  return;
+  return alto * ancho;
 }
 
 
-export function deEuroAdolar(){
+export function retornarPerimetro(lado){
+  // Tu código:
+
+  return lado * 4;
+}
+
+
+export function areaDelTriangulo(base, altura){
+  // Tu código:
+
+  return base * altura / 2;
+}
+
+
+export function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares.
   // Tu código:
 
-  return;
+  return euro * 1.2;
 }
 
 
-export function esVocal(){
+export function esVocal(letra){
   // Tu código:
+  if (letra.length > 1) return 'Dato incorrecto'
 
-  return;
+  let vocales = /[aeiou]/gi;
+
+  return letra.match(vocales) ? 'Es vocal' : 'Dato incorrecto' ;
 }
